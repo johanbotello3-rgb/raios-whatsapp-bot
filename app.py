@@ -4,7 +4,8 @@ import os
 from openai import OpenAI
 
 # Cliente OpenAI (API nueva)
-client = OpenAI(api_key=os.getenv("OPENAI_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 WHATSAPP_TOKEN = os.getenv("WA_TOKEN")
 PHONE_ID = os.getenv("PHONE_ID")
